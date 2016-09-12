@@ -1,0 +1,43 @@
+<div class="list">
+  <h1 class="center" style="margin-top: 70px">Your Sample Sale List</h1>
+  <br>
+
+  <div class="table-box2 centered-box2">
+    <div class="btn-group right">
+      <%= link_to "Sort By Dates", sort_by_dates_path, method: :get, class:"btn btn-default" %>
+      <%= link_to "Sort By Default", lists_path, method: :get, class:"btn btn-default" %>  
+    </div>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th><strong>Brand</strong></th>
+          <th><strong>About</strong></th>
+          <th><strong>Dates</strong></th>
+          <th><strong>Hours</strong></th>
+          <th><strong>Address</strong></th>
+          <th><strong>Memo</strong></th>
+          <th><strong>Delete</strong></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @lists.each do |list| %>
+        <tr>
+          <%= render partial: "list", locals: {list: list} %> 
+          <td>
+            <%= render partial: "form", locals: {list: list} %>                
+          </td>
+
+          <td>
+            <%= button_to "X", list_path(list), method: :delete, class:"btn btn-default btn-sm btn-danger delete" %>
+          </td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+  </div>
+
+</div>
+
