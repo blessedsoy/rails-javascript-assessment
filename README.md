@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 rails-assessment : this is rails web application about sample sales in NYC. Users can like or dislike sample sales, add a sample sale to their lists, leave memo on each sale, and see more info regarding the sale(like a map and hours).
@@ -5,3 +6,6 @@ rails-assessment : this is rails web application about sample sales in NYC. User
 User authentication is done by devise, and you can also log in with Facebook id.
 
 To run this application, clone this repository and run 'rails s' on the directory of the application.
+=======
+# rails-javascript-assessment
+>>>>>>> e9c07d40f4cec8bfae26a0ec02da40f141f671d4
