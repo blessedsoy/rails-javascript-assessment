@@ -10,20 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160830221910) do
+ActiveRecord::Schema.define(version: 20160913012236) do
 
   create_table "lists", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "sample_sale_id"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
-  end
-
-  create_table "memos", force: :cascade do |t|
-    t.text     "content"
-    t.integer  "list_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.text     "memo"
   end
 
   create_table "sample_sale_lists", force: :cascade do |t|
