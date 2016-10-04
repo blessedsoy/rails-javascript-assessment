@@ -1,6 +1,6 @@
 class SampleSale < ApplicationRecord
   has_many :sample_sale_lists
-  has_many :lists, through: :sample_sale_lists
+  has_many :lists
   has_many :users, through: :lists
   has_many :votes
   
@@ -37,11 +37,11 @@ class SampleSale < ApplicationRecord
     @vote ? @vote.dislike : 0
   end
 
-  def self.sort_by_likes
-    SampleSale.all.sort do |a, b|
-      b.total_likes <=> a.total_likes
-    end
-  end
+  # def self.sort_by_likes
+  #   SampleSale.all.sort do |a, b|
+  #     b.total_likes <=> a.total_likes
+  #   end
+  # end
 
   def is_not_in_lists_of(current_user)
     !current_user || !(current_user.lists.any?{|x| x.sample_sale == self})
