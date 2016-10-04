@@ -1,6 +1,11 @@
 class ListsController < ApplicationController
   before_action :authenticate_user!
-  
+  skip_before_action :verify_authenticity_token
+
+  # def user_lists
+  #   render json: {id: current_user.id, lists: current_user.lists} if current_user
+  # end
+
   def create
     if !current_user
       redirect_to new_user_session_path
@@ -20,7 +25,7 @@ class ListsController < ApplicationController
 
   def index
     @lists = current_user.lists if current_user.lists
-    @memo ? @memo : Memo.new
+    # @memo ? @memo : Memo.new
     
     respond_to do |format|
       format.html { render :index }
@@ -30,6 +35,18 @@ class ListsController < ApplicationController
 
   def show
     @list = List.find(params[:id])
+    respond_to do |format|
+      format.html { render :index }
+      format.json { render json: @list }
+    end
+  end
+
+  def update
+    @list = List.find_by(id: params[:id])
+    memo_before_update = @list.memo
+    @list.update(list_params)
+    render json: { id: @list.id, memo_before: memo_before_update, memo_after: @list.memo }
+    # redirect_to lists_path
   end
 
   def destroy
@@ -43,11 +60,20 @@ class ListsController < ApplicationController
     end
     render '/lists/index'
   end
+
+  def delete_memo
+    @list = List.find_by(id: params[:id])
+    memo_before_update = @list.memo
+    @list.memo = ''
+    @list.save
+     render json: { id: @list.id, memo_before: memo_before_update, memo_after: @list.memo }
+    # redirect_to lists_path
+  end
   
   private
 
     def list_params
-      params.require(:list).permit(:user_id, sample_sales_ids:[])
+      params.require(:list).permit(:user_id, :memo, sample_sales_ids:[])
     end
 
 end
