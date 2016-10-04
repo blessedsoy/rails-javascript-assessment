@@ -1,7 +1,7 @@
 class List < ApplicationRecord
   belongs_to :user
   belongs_to :sample_sale
-  has_one :memo
+  # has_one :memo
   has_many :sample_sale_lists
   has_many :sample_sales, through: :sample_sale_lists
 
