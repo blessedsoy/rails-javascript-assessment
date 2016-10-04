@@ -2,23 +2,66 @@
 <br>
 
 <div class="table-box centered-box2">
+  <form class="new_list" id="new_list" action="/lists" accept-charset="UTF-8" method="post">
+    <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+  
+    <table class="table table-hover">
+      
+      <thead class="thead-inverse">
+        <tr>
+          <th>#</th>
+          <th>Brand</th>
+          <th>Dates</th>
+          <th>Address</th>
+          <th>Like</th>
+          <th>Total</th>
+          <th>Dislike</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      
+      <tbody id="inner_table">
+      
+      </tbody>
 
-  <table class="table table-hover">
-    <thead class="thead-inverse">
-      <tr>
-        <th>#</th>
-        <th>Brand</th>
-        <th>Dates</th>
-        <th>Address</th>
-        <th>Like</th>
-        <th>Total</th>
-        <th>Dislike</th>
-        <th>Total</th>
-      </tr>
-    </thead>
-    
-    <tbody>
+      <input type="submit" name="commit" value="Add to my list" class="btn btn-default addToList" data-disable-with="Add to my list">
+      <div class="btn-group right">
+          <a id= "sort-by-dates" class="btn btn-default" data-method="get" href="/sample_sales">Sort By Dates</a>
+          <a id= "sort-by-likes" class="btn btn-default" data-method="get" href="javascript:;">Sort By Likes</a>    
+      </div>
+      
+    </table>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--       <div class="btn-group right">
+          <%= link_to "Sort By Dates", sample_sales_path, method: :get, class:"btn btn-default"%>
+          <%= link_to "Sort By Likes", sort_by_likes_path, method: :get, class:"btn btn-default"%>    
+      </div>  -->     
+
+    <!--
       <%= form_for @list, url: lists_path do |f|%>
+
         <% @sample_sales.each do |sample_sale| %>
       <tr>
         <td scope="row">
@@ -53,10 +96,12 @@
           <%= link_to "Sort By Dates", sample_sales_path, method: :get, class:"btn btn-default"%>
           <%= link_to "Sort By Likes", sort_by_likes_path, method: :get, class:"btn btn-default"%>    
       </div>
+       -->
+    
 
-    </tbody>
-  </table>
-
-</div>
+  
 
 
+<!-- <script type="text/javascript" charset="utf-8">
+
+</script> -->
