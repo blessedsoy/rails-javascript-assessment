@@ -37,7 +37,7 @@ gem 'sprockets-rails'
 gem 'font-awesome-sass'
 gem 'gmaps4rails'
 gem 'active_model_serializers'
-
+gem 'animate-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
