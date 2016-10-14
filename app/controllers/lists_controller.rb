@@ -45,6 +45,7 @@ class ListsController < ApplicationController
     @list = List.find_by(id: params[:id])
     memo_before_update = @list.memo
     @list.update(list_params)
+
     render json: { id: @list.id, memo_before: memo_before_update, memo_after: @list.memo }
     # redirect_to lists_path
   end

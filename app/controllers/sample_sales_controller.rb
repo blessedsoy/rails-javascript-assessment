@@ -1,4 +1,5 @@
 class SampleSalesController < ApplicationController
+
   def index
     if params[:clicked] === 'true'
       @sample_sales = SampleSale.joins(:votes).order('votes.like desc')
