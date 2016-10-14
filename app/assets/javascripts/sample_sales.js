@@ -132,6 +132,10 @@ sampleSaleIndexWithUser();
           html = $.parseHTML( "<tbody id='inner_table'>" + finalSt + "</tbody>")
           
             table.replaceWith(html)
+
+            var sortTable = $('table.sortable')
+            
+            sorttable.makeSortable(sortTable);
         });
       }
     })
