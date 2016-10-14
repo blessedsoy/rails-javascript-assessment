@@ -5,6 +5,8 @@
     createEditButton();
     deleteButton();
 
+
+    
   });
 
 
@@ -28,6 +30,8 @@
           $(submit).replaceWith('<div id="submit"><input type="submit" name="commit" value="Create" class="btn btn-default btn-sm btn-success" data-disable-with="Create"></div>')
         } 
       });
+
+      console.log('hello')
       
     });
   };
@@ -52,7 +56,6 @@
         })
       });
     };   
- 
 
 
 
