@@ -7,6 +7,18 @@ class VotesController < ApplicationController
   def like
     if current_user
       get_vote
+
+      # if @vote.like == 0 
+      #   @vote.like += 1
+      #   if @vote.dislike == -1
+      #     @vote.dislike += 1
+      #   end
+      # elsif @vote.like == 1
+      #   @vote.like -= 1
+      #   if @vote.dislike == 0
+      #     @vote.dislike -= 1
+      #   end
+      # end
       
       if @vote.like == 0 && @vote.dislike != -1
         @vote.like += 1  
@@ -28,6 +40,18 @@ class VotesController < ApplicationController
     if current_user
       get_vote
       
+        # if @vote.dislike == 0 
+        #   @vote.dislike -= 1
+        #   if @vote.like == 1
+        #     @vote.like -= 1
+        #   end
+        # elsif @vote.dislike == -1 
+        #   @vote.dislike += 1
+        #   if @vote.like == 0
+        #     @vote.like += 1
+        #   end
+        # end
+  
       if @vote.dislike == 0 && @vote.like != 1
         @vote.dislike -= 1 
       elsif @vote.dislike == -1 
