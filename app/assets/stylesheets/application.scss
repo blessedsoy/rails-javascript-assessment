@@ -226,3 +226,32 @@ a{
   background-color: grey;
   color: white;
 }
+
+.btn-danger {
+    color: #d9534f;
+    background-color: #fff;
+    border-color: #d9534f;
+}
+
+.btn-success {
+    color: #5cb85c;
+    background-color: #fff;
+    border-color: #5cb85c;
+    font-weight: bold;
+}
+
+.btn-info {
+    color: #5bc0de;
+    background-color: #fff;
+    border-color: #5bc0de;
+    font-weight: bold;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 0.2rem;
+    font-weight: bold;
+}
+
+
