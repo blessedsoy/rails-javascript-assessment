@@ -1,30 +1,9 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- //= require_tree .
- *= require_self
- *= require animate
- */
 
-@import "bootstrap";
-@import "font-awesome-sprockets";
-@import "font-awesome";
-
-body{
+html,body{
   font-family: Roboto, helvetica;
   background-color: grey;
-  heiht: 100%;
-  margin: 0;
-  padding: 0;
+  overflow: auto;
+  height:100%; margin:0;padding:0  
 }
 
 .center-box{
@@ -35,30 +14,78 @@ body{
   Home page
 *************************/
 
-.menu {
-  font-size: 16px;
-  position: absolute;
-  right: 0px;  
+#front_image{
+  overflow: auto;
 }
+
+.block {
+  text-align: center;
+  background: #242529;
+  /*border: #a0a0a0 solid 1px;*/
+  /*#c0c0c0;*/
+}
+ 
+.block:before {
+  content: '\200B';
+  content: '';
+  margin-left: -0.25em; 
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle !important;
+ }
+ 
+.centered {
+  display: inline-block;
+  vertical-align: middle !important;
+  /*width: 300px;*/
+  width: 100%;
+  /*padding: 10px 15px;*/
+  /*border: #a0a0a0 solid 1px;*/
+/*  background: #f5f5f5;*/
+ }  
+
+ .white {
+    /*background: #f5f5f5;*/
+ }
+ .right-block {
+  padding:0;
+  
+ }
+.left-block{
+  padding: 0;
+  background-color: #18191B;
+  min-height: 723px;
+}
+
+
+.image-box {
+  position: relative;
+  right: 50px;
+}
+
+a:hover{
+  text-decoration: none;
+  color: white;
+}
+a{
+  color: #bababa;
+}
+
+
 .menu a{
-  color: black;
+  position: relative;
+  top : 150px;
 }
-
-.menu li{
-  /*border: 2px solid green;*/
-}
-
-
-#front_image img{
-   position: absolute;
-   top: 0;
-   left: 0;
-   bottom: 0;
-   right: 0;
-   margin: auto;
-   height: 70%;
+.menu .logo {
+  color: white;
+  position: relative;
+  top : 60px;
 
 }
+.meny:hover {
+  color: white;
+}
+
 
 /**************************
 / samplesale page
@@ -100,6 +127,8 @@ body{
    background-color: black;
 }
 
+
+
 .centered-box4{
   position: absolute;
    top: 60px;
@@ -131,7 +160,6 @@ body{
 }
 
 .right{
-  /*text-align: right;*/
   float: right;
 }
 
@@ -181,19 +209,13 @@ body{
 .title{
   font-size: 50px;
   font-weight: bold;
-  /*background-color: gray;*/
   color: black;
   margin-top: 100px;
   position: relative;
   top: 60px;
 }
 
-a:hover{
-  text-decoration: none;
-}
-a{
-  color: black;
-}
+
 
 .center alert{
   margin-top: 50px;
@@ -206,7 +228,7 @@ a{
 }
 
 .editDelete{
-  postion: relative;
+  position: relative;
   right: 16px;
   bottom: 10px
 }
