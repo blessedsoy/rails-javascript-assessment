@@ -62,6 +62,9 @@ html,body{
   min-height: 723px;
 }
 
+.goneBlack{
+  background-color: black;
+}
 
 .image-box {
   position: relative;
@@ -126,7 +129,8 @@ a{
 /*  width: 45%;*/
   height: 723px;
   overflow: scroll;
-  padding: 20px;
+  padding: 15px;
+  padding-top: 10px;
 }
 
 
@@ -288,7 +292,6 @@ tbody a {
 .mylist tr td:nth-child(2) a{
   font-size: 12px !important;
 }
-
 /**************************
 / List
 ***************************/
@@ -298,13 +301,10 @@ tbody a {
   /*position: absolute;*/
   /*overflow: hidden; */
   /*bottom: 0;*/
-  height: 460px;
+  height: 470px;
   width: 100%;
 }
 
-#aboutInShow{
-  font-size: 12px;
-}
 
 .editDelete{
   position: relative;
@@ -380,4 +380,45 @@ tbody a {
 #detail_view{
   height: 560px;
   width: 100%;
+}
+
+/**************************
+/ Show
+***************************/
+
+#show_dates {
+  width: 80px;
+}
+#show_hours {
+  width: 80px;
+}
+
+#aboutInShow{
+  width: 180px;
+  font-size: 12px;
+}
+
+.show_address{
+  width: 100px !important;
+}
+
+.show_header_about{
+  width: 180px;
+}
+
+.show_header_dates{
+  width: 80px;
+}
+
+.show_header_hours {
+  width: 80px;
+}
+
+.show_header_address {
+  width: 100px;
+}
+
+#submit{
+  text-align: left;
+  margin-left: 3px;
 }

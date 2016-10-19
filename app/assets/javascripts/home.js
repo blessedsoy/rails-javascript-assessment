@@ -2,6 +2,15 @@
 
 $(function() {
 
+$.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+    }
+});   
+
   $('.table-box').addClass('animated fadeInDown');
   $('#summerSample').addClass('animated fadeInDown');
 
@@ -9,18 +18,21 @@ $(function() {
   //   $('#front_image').addClass('animated fadeOutDown');
   // }, 2000);
   setTimeout(function(){
-    $('.image-box').fadeOut(1500)  
-  },2000)
+    $('.image-box').animateCss('fadeOut')  
+    $('.right-block').addClass('goneBlack')
+  },1800)
   
 
   // $('.table-box').removeClass('hide');
   // $('#summerSample').removeClass('hide'); 
 
-  $('#sample-sales').fadeIn(3000)   
+  $('#sample').animateCss('fadeIn')  
   
   setTimeout(function(){ 
     $('.image-box').trigger('click')
-  }, 2600);  
+    $('.right-block').removeClass('goneBlack')
+  }, 1800);  
+
 
 });
 

@@ -16,18 +16,18 @@
   <table class="table">
     <thead>
       <tr>
-        <th class="center"><strong>About</strong></th>
-        <th class="center"><strong>Dates</strong></th>
-        <th class="center"><strong>Hours</strong></th>
-        <th class="center"><strong>Address</strong></th>
+        <th class="center show_header_about"><strong>About</strong></th>
+        <th class="center show_header_dates"><strong>Dates</strong></th>
+        <th class="center show_header_hours"><strong>Hours</strong></th>
+        <th class="center show_header_address"><strong>Address</strong></th>
       </tr>
     </thead>
     <tbody id="detail_view">
       <tr>
         <td id="aboutInShow"><%= @sample_sale.about %></td>
-        <td><%= @sample_sale.dates %></td>
-        <td><%= @sample_sale.hours %></td>
-        <td id="address"><%= @sample_sale.address%></td>
+        <td id="show_dates"><%= @sample_sale.dates %></td>
+        <td id="show_hours"><%= @sample_sale.hours %></td>
+        <td id="address" class="show_address"><%= @sample_sale.address%></td>
       </tr>
       <tr>
         <td>
