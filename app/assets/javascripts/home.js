@@ -14,12 +14,11 @@ $.fn.extend({
   $('.table-box').addClass('animated fadeInDown');
   $('#summerSample').addClass('animated fadeInDown');
 
-  // setTimeout(function(){ 
-  //   $('#front_image').addClass('animated fadeOutDown');
-  // }, 2000);
+
+  
+  
   setTimeout(function(){
     $('.image-box').animateCss('fadeOut')  
-    $('.right-block').addClass('goneBlack')
   },1800)
   
 
@@ -27,13 +26,26 @@ $.fn.extend({
   // $('#summerSample').removeClass('hide'); 
 
   $('#sample').animateCss('fadeIn')  
+
   
   setTimeout(function(){ 
     $('.image-box').trigger('click')
-    $('.right-block').removeClass('goneBlack')
-  }, 1800);  
+  }, 1800);
 
 
+  
+
+  // setTimeout(function(){
+  //   $('.right-block').addClass('goneBlack')
+    
+  // },2000)
+
+  // setTimeout(function(){
+  //   $('.right-block').removeClass('goneBlack')
+    
+  // },2030)
 });
+
+
 
 

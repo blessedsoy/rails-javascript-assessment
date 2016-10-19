@@ -280,13 +280,19 @@ tbody a {
   bottom: 10px;
 }
 
+
+.mylist{
+  width: 100%;
+  position: relative;
+}
+
 .mylist a {
-  font-size: 14px
+  font-size: 14px;
 }
 
 .mylist td{
-  padding-left: 1px !important;
-  padding-right: 1px !important;
+  /*padding-left: 1px !important;
+  padding-right: 1px !important;*/
 }
 
 .mylist tr td:nth-child(2) a{
@@ -312,9 +318,62 @@ tbody a {
   bottom: 10px;
 }
 
-.delete{
-  color: grey;
+#head_brand{
+  width: 100px;
+  text-align: center;
+}
 
+#brand_name {
+  width: 100px;
+}
+
+#head_about {
+  width: 180px;
+  text-align: center;
+}
+
+#about{
+  width: 180px;
+}
+
+#head_dates {
+  width: 80px;
+  text-align: center;
+}
+
+#dates{
+  width: 80px;
+}
+
+#head_hours {
+  width: 80px;
+  text-align: center;
+}
+
+#hours {
+  width: 80px;
+}
+
+#head_address {
+  width: 80px;
+  text-align: center;
+}
+
+#address{
+ width: 80px; 
+}
+
+#head_memo {
+  width: 180px;
+  text-align: center;
+}
+
+#memo{
+  width:180px;
+}
+
+#head_delete {
+  width: 30px;
 }
 
 #delete{
@@ -323,58 +382,9 @@ tbody a {
   vertical-align: middle;
 }
 
-#hours {
-  width: 80px;
-}
+.delete{
+  color: grey;
 
-#address{
- width: 80px; 
-}
-
-#brand_name {
-  width: 100px;
-}
-
-#dates{
-  width: 80px;
-}
-
-#about{
-  width: 160px;
-}
-
-#head_brand{
-  width: 100px;
-  text-align: center;
-}
-
-#head_about {
-  width: 160px;
-  text-align: center;
-}
-
-#head_dates {
-  width: 80px;
-  text-align: center;
-}
-
-#head_hours {
-  width: 80px;
-  text-align: center;
-}
-
-#head_address {
-  width: 80px;
-  text-align: center;
-}
-
-#head_memo {
-  width: 160px;
-  text-align: center;
-}
-
-#head_delete {
-  width: 30px;
 }
 
 #detail_view{
@@ -420,5 +430,9 @@ tbody a {
 
 #submit{
   text-align: left;
-  margin-left: 3px;
+  /*margin-left: 6px;*/
+}
+
+.memo textarea{
+  width: 100% !important;
 }
