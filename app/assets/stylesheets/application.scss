@@ -228,23 +228,30 @@ background-color: grey;
 
 
 .btn-success {
-    color: #5cb85c;
+    color: black;
     background-color: #fff;
-    border-color: #5cb85c;
+    border-color: #fff;
     font-weight: bold;
 }
 
 .btn-info {
-    color: #5bc0de;
+    color: black;
     background-color: #fff;
-    border-color: #5bc0de;
+    border-color: #fff;
     font-weight: bold;
 }
 
+.btn-danger {
+  color: black;
+  background-color: grey;
+  border-color: grey;
+  font-weight: bold;
+
+}
+
 .btn-sm, .btn-group-sm > .btn {
-    padding: 0.25rem 0.5rem;
+    padding: 0.2rem 0.4rem;
     font-size: 0.875rem;
-    border-radius: 0.2rem;
     font-weight: bold;
 }
 
