@@ -1,6 +1,6 @@
-<h1 class="center hide" id="summerSample" style="margin-top: 40px">Sample Sales in NYC</h1>
 
-<div class="table-box centered-box2 hide">
+
+<div id="sample-sales" class="sample-sales">
   <form class="new_list" id="new_list" action="/lists" accept-charset="UTF-8" method="post">
     <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
   
@@ -22,12 +22,16 @@
       <tbody id="inner_table">
       
       </tbody>
+      
+      <div id="submit-buttons">
+        <input type="submit" name="commit" value="Add to my list" class="btn btn-default addToList" data-disable-with="Add to my list">
+        <div class="btn-group right">
+            <a id= "sort-by-dates" class="btn btn-default" data-method="get" href="/sample_sales">Sort By Dates</a>
+            <a id= "sort-by-likes" class="btn btn-default" data-method="get" href="javascript:;">Sort By Likes</a>    
+        </div>        
 
-      <input type="submit" name="commit" value="Add to my list" class="btn btn-default addToList" data-disable-with="Add to my list">
-      <div class="btn-group right">
-          <a id= "sort-by-dates" class="btn btn-default" data-method="get" href="/sample_sales">Sort By Dates</a>
-          <a id= "sort-by-likes" class="btn btn-default" data-method="get" href="javascript:;">Sort By Likes</a>    
       </div>
+
       
     </table>
   </form>

@@ -5,16 +5,22 @@ $(function() {
   $('.table-box').addClass('animated fadeInDown');
   $('#summerSample').addClass('animated fadeInDown');
 
-  setTimeout(function(){ 
-    $('.container').addClass('animated fadeOutDown');
-  }, 2000);
+  // setTimeout(function(){ 
+  //   $('#front_image').addClass('animated fadeOutDown');
+  // }, 2000);
+  setTimeout(function(){
+    $('.image-box').fadeOut(1500)  
+  },2000)
+  
 
-  $('.table-box').removeClass('hide');
-  $('#summerSample').removeClass('hide');    
+  // $('.table-box').removeClass('hide');
+  // $('#summerSample').removeClass('hide'); 
+
+  $('#sample-sales').fadeIn(3000)   
   
   setTimeout(function(){ 
-    $('#cssAnimate').trigger('click')
-  }, 2000);  
+    $('.image-box').trigger('click')
+  }, 2600);  
 
 });
 

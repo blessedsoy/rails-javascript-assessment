@@ -1,13 +1,5 @@
-<div class="list">
-  <h1 class="center" style="margin-top: 70px">Your Sample Sale List</h1>
-  <br>
 
-  <div class="table-box2 centered-box2">
-    <div class="btn-group right">
-      <%= link_to "Sort By Dates", sort_by_dates_path, method: :get, class:"btn btn-default" %>
-      <%= link_to "Sort By Default", lists_path, method: :get, class:"btn btn-default" %>  
-    </div>
-
+  <div class="sample-sales">
     <table class="table table-striped sortable">
       <thead>
         <tr>
@@ -21,7 +13,7 @@
         </tr>
       </thead>
 
-      <tbody>
+      <tbody class="mylist">
         <% @lists.each do |list| %>
         <tr>
           <%= render partial: "list", locals: {list: list} %> 
@@ -35,8 +27,10 @@
         </tr>
         <% end %>
       </tbody>
+      <div class="btn-group" id="submit-buttons">
+      <%= link_to "Sort By Dates", sort_by_dates_path, method: :get, class:"btn btn-default" %>
+      <%= link_to "Sort By Default", lists_path, method: :get, class:"btn btn-default" %>  
+    </div>
     </table>
   </div>
-
-</div>
 

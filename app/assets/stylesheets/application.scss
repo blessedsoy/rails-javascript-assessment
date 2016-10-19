@@ -1,3 +1,7 @@
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 
 html,body{
   font-family: Roboto, helvetica;
@@ -49,7 +53,8 @@ html,body{
  }
  .right-block {
   padding:0;
-  
+  background-color: #CCCCCC;
+  min-height: 723px;
  }
 .left-block{
   padding: 0;
@@ -103,7 +108,7 @@ a{
 
 }
 
-.centered-box2{
+/*.centered-box2{
   position: absolute;
    top: 80px;
    left: 0;
@@ -113,7 +118,7 @@ a{
    margin-top: 150px;
    background-color: white;
 }
-
+*/
 .centered-box3{
   position: absolute;
    top: 0;
@@ -141,15 +146,17 @@ a{
    margin-top: 200px;
 }
 
-.table-box{
-  width: 45%;
-  height: 600px;
+.sample-sales{
+/*  width: 45%;*/
+  height: 723px;
   overflow: scroll;
+  padding: 20px;
 }
 
+
 .table-box2{
-  width: 70%;
-  height: 600px;
+  /*width: 70%;*/
+  height: px;
   overflow: scroll;
 }
 
@@ -178,7 +185,7 @@ a{
 
 .like_after {
   font-size: 25px;
-  color: #5CB85C;
+  color: white;
 }
 
 .dislike_before {
@@ -188,7 +195,7 @@ a{
 
 .dislike_after {
   font-size: 25px;
-  color: #D9534F;
+  color: black;
 }
 
 .total{
@@ -234,7 +241,7 @@ a{
 }
 
 .delete{
-  margin-left: 7px;
+  margin-left: 30px;
 }
 
 .navbar-inverse li a{
@@ -248,7 +255,7 @@ a{
 
 #email{
   position: relative;
-  top:9px;
+  top:75px;
   color: white;
 }
 
@@ -284,4 +291,45 @@ a{
     font-weight: bold;
 }
 
+tr {
+width: 100%;
+display: inline-table;
+table-layout: fixed;
+}
+
+table{
+ height:300px;              
+ display: -moz-groupbox;   
+}
+tbody{
+  overflow-y: scroll;      
+  height: 600px;           
+  width: 94.5%;
+  position: absolute;
+  background-color: #CCCCCC;
+}
+
+tbody a {
+  color: black;
+}
+
+#submit-buttons{
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  bottom: 20px;
+}
+
+.mylist a {
+  font-size: 14px
+}
+
+.mylist td{
+  padding-left: 1px !important;
+  padding-right: 1px !important;
+}
+
+.mylist tr td:nth-child(2) a{
+  font-size: 12px !important;
+}
 

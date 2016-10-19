@@ -10,14 +10,14 @@ function likeButton(e, that){
         $('td#likeTotal'+ data.id).html(data.likes)
         console.log(data.likes) 
       }else if (data.like === 1){
-        $(that).replaceWith("<a class='fa fa-thumbs-o-up center like_after' onclick='likeButton(event, this)' href=" + url +">")
+        $(that).replaceWith("<a class='fa fa-thumbs-up center like_after' onclick='likeButton(event, this)' href=" + url +">")
         $('td#likeTotal'+ data.id).text(data.likes)
         console.log(data.likes)  
       }else if (data.dislike === 0){
         $(that).replaceWith("<a class='fa fa-thumbs-o-down center dislike_before' onclick='likeButton(event, this)' href=" + url +">")
         $('td#dislikeTotal'+ data.id).text(data.dislikes)  
       }else if (data.dislike === -1){
-        $(that).replaceWith("<a class='fa fa-thumbs-o-down center dislike_after' onclick='likeButton(event, this)' href=" + url +">")
+        $(that).replaceWith("<a class='fa fa-thumbs-down center dislike_after' onclick='likeButton(event, this)' href=" + url +">")
         $('td#dislikeTotal'+ data.id).text(data.dislikes) 
       }
     })

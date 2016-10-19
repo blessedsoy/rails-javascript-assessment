@@ -1,7 +1,7 @@
 <%= form_for list, :html => { :class => "ce", :id => "ce" } do |f| %>
   <%= f.hidden_field 'id', :value => :id %>
   <div class="memo">
-    <%= f.text_area :memo, :id => list.id, :placeholder => "leave a memo", :rows => 2, :cols => 30 %>
+    <%= f.text_area :memo, :id => list.id, :placeholder => "leave a memo", :rows => 3, :cols => 15 %>
   </div>
   <div id="submit">
     <%= f.submit "Create", class:"btn btn-default btn-sm btn-success" if !list.memo || list.memo == '' %>
