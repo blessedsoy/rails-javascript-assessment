@@ -108,17 +108,6 @@ a{
 
 }
 
-/*.centered-box2{
-  position: absolute;
-   top: 80px;
-   left: 0;
-   bottom: 0;
-   right: 0;
-   margin: auto;
-   margin-top: 150px;
-   background-color: white;
-}
-*/
 .centered-box3{
   position: absolute;
    top: 0;
@@ -133,19 +122,6 @@ a{
 }
 
 
-
-.centered-box4{
-  position: absolute;
-   top: 60px;
-   left: 0;
-   bottom: 0;
-   right: 0;
-   margin: auto;
-   height: 50%;
-   text-align: center;
-   margin-top: 200px;
-}
-
 .sample-sales{
 /*  width: 45%;*/
   height: 723px;
@@ -154,17 +130,6 @@ a{
 }
 
 
-.table-box2{
-  /*width: 70%;*/
-  height: px;
-  overflow: scroll;
-}
-
-.table-box3{
-  width: 50%;
-  height: 500px;
-  overflow: scroll;
-}
 
 .right{
   float: right;
@@ -210,7 +175,7 @@ a{
 
 .brand{
   font-size: 60px;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .title{
@@ -223,7 +188,6 @@ a{
 }
 
 
-
 .center alert{
   margin-top: 50px;
   top: 50px;
@@ -231,18 +195,11 @@ a{
 }
 
 .addToList{
-  background-color: #CCCCCC;
+/*  background-color: #CCCCCC;*/
+background-color: grey;
 }
 
-.editDelete{
-  position: relative;
-  right: 16px;
-  bottom: 10px
-}
 
-.delete{
-  margin-left: 30px;
-}
 
 .navbar-inverse li a{
   
@@ -264,11 +221,7 @@ a{
   color: white;
 }
 
-.btn-danger {
-    color: #d9534f;
-    background-color: #fff;
-    border-color: #d9534f;
-}
+
 
 .btn-success {
     color: #5cb85c;
@@ -297,17 +250,20 @@ display: inline-table;
 table-layout: fixed;
 }
 
+
 table{
  height:300px;              
  display: -moz-groupbox;   
 }
-tbody{
+
+tbody {
   overflow-y: scroll;      
   height: 600px;           
   width: 94.5%;
   position: absolute;
   background-color: #CCCCCC;
 }
+
 
 tbody a {
   color: black;
@@ -317,7 +273,7 @@ tbody a {
   position: absolute;
   bottom: 0;
   right: 20px;
-  bottom: 20px;
+  bottom: 10px;
 }
 
 .mylist a {
@@ -333,3 +289,95 @@ tbody a {
   font-size: 12px !important;
 }
 
+/**************************
+/ List
+***************************/
+
+
+#map{
+  /*position: absolute;*/
+  /*overflow: hidden; */
+  /*bottom: 0;*/
+  height: 460px;
+  width: 100%;
+}
+
+#aboutInShow{
+  font-size: 12px;
+}
+
+.editDelete{
+  position: relative;
+  right: 16px;
+  bottom: 10px;
+}
+
+.delete{
+  color: grey;
+
+}
+
+#delete{
+  width: 30px;
+  border-left: 2px solid #D3D3D3;
+  vertical-align: middle;
+}
+
+#hours {
+  width: 80px;
+}
+
+#address{
+ width: 80px; 
+}
+
+#brand_name {
+  width: 100px;
+}
+
+#dates{
+  width: 80px;
+}
+
+#about{
+  width: 160px;
+}
+
+#head_brand{
+  width: 100px;
+  text-align: center;
+}
+
+#head_about {
+  width: 160px;
+  text-align: center;
+}
+
+#head_dates {
+  width: 80px;
+  text-align: center;
+}
+
+#head_hours {
+  width: 80px;
+  text-align: center;
+}
+
+#head_address {
+  width: 80px;
+  text-align: center;
+}
+
+#head_memo {
+  width: 160px;
+  text-align: center;
+}
+
+#head_delete {
+  width: 30px;
+}
+
+#detail_view{
+  height: 560px;
+  width: 100%;
+}

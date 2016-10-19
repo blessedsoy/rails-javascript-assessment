@@ -3,13 +3,13 @@
     <table class="table table-striped sortable">
       <thead>
         <tr>
-          <th><strong>Brand</strong></th>
-          <th><strong>About</strong></th>
-          <th><strong>Dates</strong></th>
-          <th><strong>Hours</strong></th>
-          <th><strong>Address</strong></th>
-          <th><strong>Memo</strong></th>
-          <th><strong>Delete</strong></th>
+          <th id="head_brand"><strong>Brand</strong></th>
+          <th id="head_about"><strong>About</strong></th>
+          <th id="head_dates"><strong>Dates</strong></th>
+          <th id="head_hours"><strong>Hours</strong></th>
+          <th id="head_address"><strong>Address</strong></th>
+          <th id="head_memo"><strong>Memo</strong></th>
+          <th id="head_delete"><strong></strong></th>
         </tr>
       </thead>
 
@@ -21,15 +21,15 @@
             <%= render partial: "form", locals: {list: list} %>                
           </td>
 
-          <td>
-            <%= link_to "X", list_path(list), method: :delete, class:"btn btn-default btn-sm btn-danger delete" %>
+          <td id="delete">
+            <%= link_to "", list_path(list), method: :delete, class:"fa fa-trash-o delete" %>
           </td>
         </tr>
         <% end %>
       </tbody>
       <div class="btn-group" id="submit-buttons">
-      <%= link_to "Sort By Dates", sort_by_dates_path, method: :get, class:"btn btn-default" %>
-      <%= link_to "Sort By Default", lists_path, method: :get, class:"btn btn-default" %>  
+      <%= link_to "Sort By Dates", sort_by_dates_path, method: :get, class:"btn btn-default btn-sm" %>
+      <%= link_to "Sort By Default", lists_path, method: :get, class:"btn btn-default btn-sm" %>  
     </div>
     </table>
   </div>
