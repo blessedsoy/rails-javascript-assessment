@@ -133,8 +133,6 @@ a{
   padding-top: 10px;
 }
 
-
-
 .right{
   float: right;
 }
@@ -262,7 +260,7 @@ table{
 
 tbody {
   overflow-y: scroll;      
-  height: 600px;           
+  height: 660px;           
   width: 94.5%;
   position: absolute;
   background-color: #CCCCCC;
@@ -276,15 +274,11 @@ tbody a {
 #submit-buttons{
   position: absolute;
   bottom: 0;
-  right: 20px;
+  right: 30px;
   bottom: 10px;
+  z-index: 10;
 }
 
-
-.mylist{
-  width: 100%;
-  position: relative;
-}
 
 .mylist a {
   font-size: 14px;
@@ -307,7 +301,7 @@ tbody a {
   /*position: absolute;*/
   /*overflow: hidden; */
   /*bottom: 0;*/
-  height: 470px;
+  height: 480px;
   width: 100%;
 }
 
