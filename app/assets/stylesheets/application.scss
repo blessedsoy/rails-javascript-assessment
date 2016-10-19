@@ -21,9 +21,14 @@
 
 body{
   font-family: Roboto, helvetica;
+  background-color: grey;
   heiht: 100%;
   margin: 0;
   padding: 0;
+}
+
+.center-box{
+  background-color: black;
 }
 
 /*************************     
@@ -51,7 +56,7 @@ body{
    bottom: 0;
    right: 0;
    margin: auto;
-   height: 60%;
+   height: 70%;
 
 }
 
@@ -68,6 +73,7 @@ body{
    margin: auto;
    height: 50%;
    text-align: center;
+
 }
 
 .centered-box2{
@@ -78,6 +84,7 @@ body{
    right: 0;
    margin: auto;
    margin-top: 150px;
+   background-color: white;
 }
 
 .centered-box3{
@@ -90,6 +97,7 @@ body{
    height: 80%;
    text-align: center;
    margin-top: 100px;
+   background-color: black;
 }
 
 .centered-box4{
