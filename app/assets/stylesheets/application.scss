@@ -236,8 +236,9 @@ background-color: grey;
     color: black;
     background-color: #fff;
     border-color: #fff;
-    font-weight: bold;
+    font-weight: bold;   
 }
+
 
 .btn-danger {
   color: black;
@@ -245,6 +246,27 @@ background-color: grey;
   border-color: grey;
   font-weight: bold;
 
+}
+
+.btn-success:hover {
+  background-color: black;
+  border-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-danger:hover {
+  background-color: black;
+  border-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-info:hover {
+  background-color: black;
+  border-color: black;
+  color: white;
+  font-weight: bold;
 }
 
 .btn-sm, .btn-group-sm > .btn {
@@ -268,7 +290,7 @@ table{
 tbody {
   overflow-y: scroll;      
   height: 660px;           
-  width: 94.5%;
+  width: 96.5%;
   position: absolute;
   background-color: #CCCCCC;
 }
@@ -282,7 +304,6 @@ tbody a {
   position: absolute;
   bottom: 0;
   right: 30px;
-  bottom: 10px;
   z-index: 10;
 }
 
@@ -302,13 +323,15 @@ tbody a {
 /**************************
 / List
 ***************************/
-
+.list-thead {
+  background-color: white;
+}
 
 #map{
   /*position: absolute;*/
   /*overflow: hidden; */
   /*bottom: 0;*/
-  height: 480px;
+  height: 475px;
   width: 100%;
 }
 
@@ -384,7 +407,7 @@ tbody a {
 }
 
 .delete{
-  color: grey;
+  color: black;
 
 }
 
@@ -431,9 +454,8 @@ tbody a {
 
 #submit{
   text-align: left;
+  margin-bottom: 0px;
+  height: 30px
   /*margin-left: 6px;*/
 }
 
-.memo textarea{
-  width: 100% !important;
-}
