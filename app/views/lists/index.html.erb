@@ -17,7 +17,7 @@
         <% @lists.each do |list| %>
         <tr>
           <%= render partial: "list", locals: {list: list} %> 
-          <td id="memo">
+          <td id="memo-form">
             <%= render partial: "form", locals: {list: list} %>                
           </td>
 

@@ -335,74 +335,72 @@ tbody a {
   width: 100%;
 }
 
-
 .editDelete{
   position: relative;
   right: 16px;
   bottom: 10px;
 }
 
-#head_brand{
-  width: 100px;
-  text-align: center;
+
+/*#head_brand{
+  border: 1px solid red;
 }
 
 #brand_name {
-  width: 100px;
-}
+ border: 1px solid blue; 
+}*/
 
-#head_about {
-  width: 180px;
-  text-align: center;
+/*#head_about {
+  border: 1px solid blue;
 }
-
-#about{
-  width: 180px;
+#about {
+ border: 1px solid red; 
 }
-
 #head_dates {
-  width: 80px;
-  text-align: center;
+  border: 1px solid red;
 }
-
 #dates{
-  width: 80px;
+  border: 1px solid blue;
+}
+#head_hours{
+  border: 1px solid blue;
+}
+#hours{
+  border: 1px solid red;
+}
+#head_address{
+  border: 1px solid red;
+}*/
+/*#head_memo {
+  border: 1px solid red;
+}*/
+
+/*#memo-form {
+  border: 1px solid blue;
+}*/
+
+th {
+  text-align: center !important;
 }
 
-#head_hours {
-  width: 80px;
-  text-align: center;
+tr td{
+padding: 0;
 }
 
-#hours {
-  width: 80px;
+textarea{
+  width : 100%;
+  height: 10vh !important;
 }
 
-#head_address {
-  width: 80px;
-  text-align: center;
-}
 
-#address{
- width: 80px; 
-}
 
-#head_memo {
-  width: 180px;
-  text-align: center;
-}
-
-#memo{
-  width:180px;
-}
-
-#head_delete {
+#head_delete{
   width: 30px;
 }
 
 #delete{
   width: 30px;
-  border-left: 2px solid #D3D3D3;
+  /*border-left: 2px solid #D3D3D3;*/
   vertical-align: middle;
 }
 
@@ -411,46 +409,11 @@ tbody a {
 
 }
 
-#detail_view{
-  height: 560px;
-  width: 100%;
-}
+
 
 /**************************
 / Show
 ***************************/
-
-#show_dates {
-  width: 80px;
-}
-#show_hours {
-  width: 80px;
-}
-
-#aboutInShow{
-  width: 180px;
-  font-size: 12px;
-}
-
-.show_address{
-  width: 100px !important;
-}
-
-.show_header_about{
-  width: 180px;
-}
-
-.show_header_dates{
-  width: 80px;
-}
-
-.show_header_hours {
-  width: 80px;
-}
-
-.show_header_address {
-  width: 100px;
-}
 
 #submit{
   text-align: left;
